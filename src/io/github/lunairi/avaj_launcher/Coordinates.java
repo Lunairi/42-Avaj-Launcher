@@ -1,5 +1,7 @@
 package io.github.lunairi.avaj_launcher;
 
+import io.github.lunairi.avaj_launcher.aircraft.Flyable;
+
 public class Coordinates {
 	private int longitude;
 	private int latitude;
@@ -22,4 +24,5 @@ public class Coordinates {
 	public int getHeight() {
 		return this.height;
 	}
+
 }

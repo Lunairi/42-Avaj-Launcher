@@ -13,13 +13,12 @@ public class Tower {
 	}
 	
 	public void unregister(Flyable flyable) {
-		System.out.println();
 		observers.remove(flyable);
 	}
 	
 	protected void conditionsChanged() {
-		observers.forEach((condition) -> {
-			condition.updateConditions();
-		});
+		for (int i = 0; i < observers.size(); i++) {
+			observers.get(i).updateConditions();
+		}
 	}
 }
